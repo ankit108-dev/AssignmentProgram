@@ -1,4 +1,4 @@
-package com.Kodnest.AssignmentProblem.CalculatorDilemma;
+package com.Kodnest.AssignmentProblem;
 
 public class CalculatorApp {
 	void calc(char character,int num1,int num2)

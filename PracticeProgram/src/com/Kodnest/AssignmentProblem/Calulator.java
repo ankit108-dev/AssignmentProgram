@@ -1,4 +1,4 @@
-package com.Kodnest.AssignmentProblem.CalculatorDilemma;
+package com.Kodnest.AssignmentProblem;
 import java.util.Scanner;
 public class Calulator {
 

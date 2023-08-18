@@ -1,4 +1,4 @@
-package com.Kodnest.AssignmentProblem;
+package com.Kodnest.AssignmentProblem.TemperatureConversion;
 
 public class TemperatureConverter {
 	public static double celsiusToFarenheit(double celsius)

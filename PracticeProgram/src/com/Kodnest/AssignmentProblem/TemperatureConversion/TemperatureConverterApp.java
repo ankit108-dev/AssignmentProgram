@@ -1,4 +1,4 @@
-package com.Kodnest.AssignmentProblem;
+package com.Kodnest.AssignmentProblem.TemperatureConversion;
 import java.util.Scanner;
 
 public class TemperatureConverterApp {

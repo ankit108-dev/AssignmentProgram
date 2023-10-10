@@ -1,10 +1,35 @@
 package com.Kodnest.Arrays.Searching;
+import java.util.Scanner;
+
+import com.Kodnest.Arrays.Sorting.BubbleSort;
 
 public class BinarySearch1 {
 	public static void main(String[] args) {
-		int []array= {10,20,30,89,97,100};
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter length of Array:");
+		//Crating Array
+		int []array=new int[scan.nextInt()];
+		System.out.println("enter "+array.length+ " elements: ");
 		
-		int key=101;
+		for(int i=0;i<array.length;i++)
+		{
+			array[i]=scan.nextInt();
+		}
+		//calling bubble sort to sort the array
+		BubbleSort sort=new BubbleSort();
+				sort.doBubbleSort(array);
+				//print Array after sorting
+				System.out.println("Array elements After sorting:");
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+" ");
+		}
+		System.out.println();
+		System.out.println("enter key to search:");
+		int key=scan.nextInt();
+		
+		
+		//by creating object we are accessing method of binary search class
 		BinarySearchApp search=new BinarySearchApp();
 		int foundIndex=search.doBinarySearch(array, key);
 		
@@ -16,6 +41,7 @@ public class BinarySearch1 {
 		{
 			System.out.println("Elements "+key+ " not found in the array");
 		}
+		scan.close();
 	}
 
 }
